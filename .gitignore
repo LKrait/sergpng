@@ -18,7 +18,6 @@ db.sqlite3
 media/
 
 # Static files (if not versioning static)
-static/
 
 # IDE or editor folders
 .idea/
