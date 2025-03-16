@@ -1,0 +1,25 @@
+# Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment directories
+venv/
+env/
+.venv/
+
+# Django secret key file
+.env
+
+# SQLite database
+db.sqlite3
+
+# Media files
+media/
+
+# Static files (if not versioning static)
+static/
+
+# IDE or editor folders
+.idea/
+.vscode/
