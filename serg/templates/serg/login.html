@@ -26,19 +26,21 @@ The above copyright notice and this permission notice shall be included in all c
     <title>MySERG | Login</title>
   </head>
   <body>
+    {% block content %}
     <div class="uf-form-signin">
       <div class="text-center">
         <a href="{% url 'index-page'%}"><img src="{% static 'serg/assets/img/logo-fb.png' %}" alt="" width="100" height="100"></a>
       <h1 class="text-white h3">MySERG Account</h1>
       </div>
-      <form class="mt-4">
+      <form class="mt-4" method="POST">
+        {% csrf_token %}
         <div class="input-group uf-input-group input-group-lg mb-3">
           <span class="input-group-text fa fa-user"></span>
-          <input type="text" class="form-control" placeholder="Username or Email address">
+          {{form.username}}
         </div>
         <div class="input-group uf-input-group input-group-lg mb-3">
           <span class="input-group-text fa fa-lock"></span>
-          <input type="password" class="form-control" placeholder="Password">
+          {{form.password}}
         </div>
         <div class="d-flex mb-3 justify-content-between">
           <div class="form-check">
@@ -66,7 +68,7 @@ The above copyright notice and this permission notice shall be included in all c
         </div>
       </form>
     </div>
-
+    {% endblock %}
     <!-- JavaScript -->
 
     <!-- Separate Popper and Bootstrap JS -->
