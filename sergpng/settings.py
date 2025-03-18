@@ -82,12 +82,8 @@ WSGI_APPLICATION = 'sergpng.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'sergpng',
-        'USER': 'admin',
-        'PASSWORD': '!*Ty8MXa',
-        'HOST': '52.55.238.28',
-        'PORT': '5432'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3'
     }
 }
 
