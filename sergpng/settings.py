@@ -86,8 +86,8 @@ DATABASES = {
         'NAME': 'sergpng',
         'USER': 'admin',
         'PASSWORD': '!*Ty*MXa',
-        'HOST': 'localhost',
-        'PORT': ''
+        'HOST': '54.172.137.105',
+        'PORT': '5432'
     }
 }
 
