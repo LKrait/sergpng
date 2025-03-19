@@ -11,6 +11,9 @@ env/
 # Django secret key file
 .env
 
+# SQLite database
+db.sqlite3
+
 # Media files
 media/
 
